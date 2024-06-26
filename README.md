@@ -5,7 +5,9 @@
 
 ## Descripción
 
-Este es un proyecto de ejemplo que utiliza HTML, CSS, JavaScript, C++ y Java.
+Ejercicios del curso de programacion UMG
+
+- estructuras de datos Estaticas
 
 ## Requisitos
 
