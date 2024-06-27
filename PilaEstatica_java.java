@@ -8,7 +8,7 @@ class Pila{
       tope = -1;
       pila = new int[size];
    }
-   
+   //metodo para pushear elementos 
    public void Push(int x){
       if(tope >=(size-1)){
          System.out.println("la pila esta llena");
