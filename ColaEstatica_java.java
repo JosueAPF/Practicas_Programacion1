@@ -20,6 +20,23 @@ class Cola{
          System.out.println("encolando :"+ x);
       }
    }
+   
+   public void Recorrido(){
+      if(fondo==-1){
+         System.out.println("la cola esta vacia");
+      }else{
+         System.out.println("Recorriod de la cola");
+         for(int i=frente;i<=fondo;i++){
+            System.out.println(cola[i]);
+         }
+      }
+   }
+   
+   public int Desencolado(){
+      System.out.println("Desencolado de un elemento :"+fondo);
+      return fondo--;
+   
+   }
 
 }
 
@@ -31,5 +48,15 @@ public class ColaEstatica_java{
       for(int i=0;i<4;i++){
          cola.Encolar(i);
       }
+      
+      //recorrido de la cola
+      cola.Recorrido();
+      
+      //desencolado de la cola
+      cola.Desencolado();
+      
+      //recorrido de la cola
+      cola.Recorrido();
+
    }
 }
