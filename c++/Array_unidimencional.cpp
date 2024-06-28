@@ -1,32 +1,25 @@
+//array unidimencional simple
 #include<iostream>
+
+
 using namespace std;
 
-//clase array unidimencional
-//ingreso 
-class ArrgUni{
-	public:
-		int arrg[5];		
-		void addData(int x){
-			arrg[0]=x;
-		}
-};
-
-//sub clase para el recorrido
-class Recorrido:public ArrgUni {
-	public:
-		void recorridoArray(){
-			for(int i=0;i<5;i++){
-				cout<<"Recorrido :"<<arrg[i]<<endl;
-			}
-		}
-};
+//mostrando los datos
+void Recorrido(int arrg[]){
+	for(int i=0;i<=4;i++){
+		cout<<arrg[i];
+	}
+}
 
 int main(){
-	ArrgUni Array;
-	Recorrido recorrido;
-	Array.addData(1);
-	Array.addData(2);
-	Array.addData(3);
-	recorrido.recorridoArray();
+	//creacion del array unidimencional y asignacion del tamaño
+	int arr[5];
+	
+	arr[0]=1;
+	arr[1]=2;
+	arr[2]=3;
+	arr[3]=4;
+	arr[4]=5;
+	Recorrido(arr);
 	return 0;
 }
