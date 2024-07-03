@@ -40,6 +40,20 @@ class OperacionsCadenas extends CadenasDeclaracion{
             break;
       }
    }
+   
+   public void Longitud(){
+      System.out.println("Esta es la longitud de la cadena #1: "+Cadena1.length());
+      System.out.println("Esta es la longitud de la cadena #2: "+Cadena2.length());
+   
+   }
+   
+   public void Compare(){
+      if(Cadena1.equals(Cadena2)){
+         System.out.println("son iguales");
+      }else{
+         System.out.println(Cadena1+","+Cadena2+":No son iguales");
+      }
+   }
 
 }
 
@@ -47,7 +61,10 @@ public class Cadenas{
 	public static void main(String[] args){
       OperacionsCadenas cadena = new OperacionsCadenas();
       cadena.Concatenacion();
+      cadena.Longitud();
+      cadena.Compare();
       cadena.Convercion();
+      
 	} 
 	
 }
