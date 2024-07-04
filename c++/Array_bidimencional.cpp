@@ -6,8 +6,9 @@ using namespace std;
 void recorrido(int arrg[2][3],int fila,int col){
 	for(fila=0;fila<2;fila++){
 		for(col=0;col<3;col++){
-			cout<<arrg[fila][col];
+			cout<<arrg[fila][col]<<"";
 		}
+		cout<<endl;
 	}
 }
 int main(){
@@ -16,7 +17,7 @@ int main(){
 	
 	for(fila=0;fila<2;fila++){
 		for(col=0;col<3;col++){
-			cout<<"ingrese los datos :"<<fila+1<<col+1<<endl;
+			cout << "Ingrese los datos [" << fila + 1 << "][" << col + 1 << "]: ";
 			cin>>arr[fila][col];
 		}
 	}
