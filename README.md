@@ -1,4 +1,4 @@
-# Mi Proyecto
+# Ejercicios programacion #1
 
 [![C++](https://img.shields.io/badge/C++-11-blue.svg?logo=c%2B%2B)](https://isocpp.org/)
 [![Java](https://img.shields.io/badge/Java-8-red.svg?logo=java)](https://www.java.com/)
