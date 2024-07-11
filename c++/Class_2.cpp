@@ -66,11 +66,19 @@ class jose:public Persona{
 
 
 //otra subclass
-
+class julia:public Persona{
+	public:
+		julia(string Nombre,string Ape,int edad,float peso,float altura,int ano_nacim):Persona(Nombre,Ape,edad,peso,altura,ano_nacim){
+		
+		}
+}; 
 
 int main(){
 	jose obj1("perez","jose","Hernandez",18,2.5,1.60,1800);
+	julia obj2("julia","perez",28,2.1,1.80,1900);
 	
 	obj1.fulldata();
+	cout<<endl;
+	obj2.Datos();
 	return 0;
 }
