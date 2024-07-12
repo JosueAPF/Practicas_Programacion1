@@ -26,10 +26,12 @@ class Animales{
 			this->numPatas=0;
 			*/
 		}
-		
 		void Datos(){
 			cout<<"No.Id :"<<this->id<<endl;
 			cout<<"Nombre :"<<this->nombre<<endl;
+		}
+		void hacerRuido(){
+			cout<<this.nombre<<" ha hecho ruido"<<endl;
 		}
 };
 
@@ -49,7 +51,12 @@ class Perro:public Animales{
 			cout<<"Edad :"<<this->edad<<" Anos"<<endl;
 			cout<<"raza :"<<this->raza<<endl;
 			cout<<"color :"<<this->color<<endl;
-		}	 	
+		}
+		void hacerRuido(){
+			cout<<this.nombre<<"va hacer ruido"<<endl;
+			cout<<"Guaw Guaw"<<endl;
+		}
+			 	
 };
 
 int main(){
