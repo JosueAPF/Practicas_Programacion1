@@ -54,7 +54,7 @@ class Perro:public Animales{
 		}
 		void hacerRuido(){
 			cout<<this->nombre<<"va hacer ruido"<<endl;
-			cout<<"Guaw Guaw"<<endl;
+			cout<<"Guaw-Guaw"<<endl;
 		}
 			 	
 };
@@ -64,11 +64,12 @@ class Gato:public Perro{
 	private:
 		//string toy[3];
 	public:
-		Gato():Perro(id,nombre,edad,raza,color){
+		Gato(int id,string nombre,int edad,string raza,string color):Perro(id,nombre,edad,raza,color){
 
 		}
 		void hacerRuido(){
 			cout<<"Esta haciendo ruido"<<endl;
+			cout<<"miu miu!!!"<<endl;
 		}		
 };
 
@@ -83,8 +84,10 @@ int main(){
 	Perro obj1 (1,"panchito",1,"cruze","gris");
 	obj1.Datos();
 	
+	
 	//gato
-	//Gato obj2(2,"juanita",4,"cruze","verde");
-	//obj2.Datos();
+	Gato obj2(2,"juanita",4,"cruze","verde");
+	obj2.Datos();
+	
 	return 0;
 }
