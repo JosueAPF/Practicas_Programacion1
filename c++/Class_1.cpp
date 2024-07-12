@@ -84,10 +84,11 @@ int main(){
 	Perro obj1 (1,"panchito",1,"cruze","gris");
 	obj1.Datos();
 	
+	cout<<endl;
 	
 	//gato
 	Gato obj2(2,"juanita",4,"cruze","verde");
 	obj2.Datos();
-	
+	obj2.hacerRuido();
 	return 0;
 }
