@@ -1,11 +1,11 @@
 #include<iostream>
+#include<string>
 
 using namespace std;
 
 
 //creacion de la superclass
 class Animales{
-	
 	protected:
 		int id;
 		string nombre;
@@ -31,13 +31,13 @@ class Animales{
 			cout<<"Nombre :"<<this->nombre<<endl;
 		}
 		void hacerRuido(){
-			cout<<this.nombre<<" ha hecho ruido"<<endl;
+			cout<<this->nombre<<" ha hecho ruido"<<endl;
 		}
 };
 
 
 class Perro:public Animales{
-	private:
+	protected:
 		string raza;
 		string color;
 	public:
@@ -53,11 +53,25 @@ class Perro:public Animales{
 			cout<<"color :"<<this->color<<endl;
 		}
 		void hacerRuido(){
-			cout<<this.nombre<<"va hacer ruido"<<endl;
+			cout<<this->nombre<<"va hacer ruido"<<endl;
 			cout<<"Guaw Guaw"<<endl;
 		}
 			 	
 };
+
+
+class Gato:public Perro{
+	private:
+		//string toy[3];
+	public:
+		Gato():Perro(id,nombre,edad,raza,color){
+
+		}
+		void hacerRuido(){
+			cout<<"Esta haciendo ruido"<<endl;
+		}		
+};
+
 
 int main(){
 	/*
@@ -65,8 +79,12 @@ int main(){
 	Perro.Datos();
 	*/
 	
+	//perro
 	Perro obj1 (1,"panchito",1,"cruze","gris");
 	obj1.Datos();
 	
+	//gato
+	//Gato obj2(2,"juanita",4,"cruze","verde");
+	//obj2.Datos();
 	return 0;
 }
